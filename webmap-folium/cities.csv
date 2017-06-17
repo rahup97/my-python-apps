@@ -1,0 +1,120 @@
+city,city_ascii,lat,lng,pop,country,iso2,iso3,province
+Qal eh-ye Now,Qal eh-ye,34.98300013,63.13329964,2997,Afghanistan,AF,AFG,Badghis
+Mariehamn,Mariehamn,60.09699618,19.94900447,10682,Aland,AX,ALD,Finström
+Kruje,Kruje,41.51899817,19.79700359,21286,Albania,AL,ALB,Durrës
+Tirana,Tirana,41.32754071,19.81888301,658318,Albania,AL,ALB,Durrës
+Jijel,Jijel,36.82199703,5.76600356,148000,Algeria,DZ,DZA,Jijel
+El Golea,El Golea,30.56662132,2.883327595,32049,Algeria,DZ,DZA,Ghardaïa
+Oran,Oran,35.71000246,-0.61997278,721992,Algeria,DZ,DZA,Oran
+Songo,Songo,-7.349591452,14.84998734,10579,Angola,AO,AGO,Uíge
+Veinticinco de Mayo,Veinticinco de Mayo,-35.42999632,-60.17998071,18749,Argentina,AR,ARG,Ciudad de Buenos Aires
+Merredin,Merredin,-31.48284707,118.2666723,2054,Australia,AU,AUS,Western Australia
+Coffs Harbour,Coffs Harbour,-30.3070532,153.1122973,48961,Australia,AU,AUS,New South Wales
+Garanhuns,Garanhuns,-8.890014222,-36.50003076,107115,Brazil,BR,BRA,Pernambuco
+Stara Zagora,Stara Zagora,42.42313275,25.6227148,128315.5,Bulgaria,BG,BGR,Stara Zagora
+Krong Koh Kong,Krong Koh Kong,11.61753897,102.9849329,30285,Cambodia,KH,KHM,Kaôh Kong
+Hebi,Hebi,35.95037539,114.2200459,244662,China,CN,CHN,Henan
+Yian,Yian,47.88039654,125.2999898,39924,China,CN,CHN,Heilongjiang
+Huzhou,Huzhou,30.87037539,120.0999971,694660,China,CN,CHN,Zhejiang
+Wuhan,Wuhan,30.58003135,114.270017,5713603,China,CN,CHN,Hubei
+Bunia,Bunia,1.560407327,30.24000403,61537,Congo (Kinshasa),CD,COD,Orientale
+Cotui,Cotui,19.05900306,-70.1520026,41641,Dominican Republic,DO,DOM,Sánchez Ramírez
+Sangolqui,Sangolqui,-0.31002114,-78.4599502,91848,Ecuador,EC,ECU,Pichincha
+Stanley,Stanley,-51.70001097,-57.8499679,2213,Falkland Islands,FK,FLK,
+Le Mans,Le Mans,48.00041506,0.099983275,143392.5,France,FR,FRA,Pays de la Loire
+Makokou,Makokou,0.567082946,12.8665942,15320.5,Gabon,GA,GAB,Ogooué-Ivindo
+Furth,Furth,49.47001528,10.99998979,174934.5,Germany,DE,DEU,Bayern
+Santa Barbara,Santa Barbara,14.91900304,-88.23599963,15119,Honduras,HN,HND,Santa Bárbara
+Medinipur,Medinipur,22.3304057,87.15001868,169127,India,IN,IND,West Bengal
+Karur,Karur,10.95037681,78.08333695,76915,India,IN,IND,Tamil Nadu
+Bhavnagar,Bhavnagar,21.77842389,72.12995357,509790,India,IN,IND,Dadra and Nagar Haveli
+Ahmednagar,Ahmednagar,19.11042137,74.75000037,379450,India,IN,IND,Maharashtra
+Gaya,Gaya,24.79997072,85.00002071,423692,India,IN,IND,Bihar
+Meerut,Meerut,29.00041201,77.70000118,1310592,India,IN,IND,Uttar Pradesh
+Hubli,Hubli,15.35997845,75.12501623,841402,India,IN,IND,Karnataka
+Jodhpur,Jodhpur,26.29176597,73.01677283,958238,India,IN,IND,Rajasthan
+Patna,Patna,25.62495913,85.13003861,1878960,India,IN,IND,Bihar
+Madiun,Madiun,-7.634586976,111.5149914,186099,Indonesia,ID,IDN,Jawa Timur
+Bandar Lampung,Bandar Lampung,-5.430018698,105.2699979,795757,Indonesia,ID,IDN,Lampung
+Amol,Amol,36.4713255,52.36330481,210516,Iran,IR,IRN,Mazandaran
+Hamadan,Hamadan,34.79602724,48.51501257,264293,Iran,IR,IRN,Hamadan
+Fukushima,Fukushima,37.74000775,140.4700199,278961.5,Japan,JP,JPN,Fukushima
+Shieli,Shieli,44.16700563,66.75002356,25871,Kazakhstan,KZ,KAZ,Qyzylorda
+Motul,Motul,21.09998985,-89.27998743,21181,Mexico,MX,MEX,Yucatán
+Ciudad Guzman,Ciudad Guzman,19.71041058,-103.4600004,90480,Mexico,MX,MEX,Jalisco
+El Jadida,El Jadida,33.2603587,-8.509982138,164009.5,Morocco,MA,MAR,Doukkala - Abda
+Kano,Kano,11.99997683,8.5200378,3140000,Nigeria,NG,NGA,Kano
+Taedong,Taedong,40.61709312,125.4501098,1884,North Korea,KP,PRK,P'yongan-bukto
+Harstad,Harstad,68.7879059,16.51557043,19203,Norway,NO,NOR,Troms
+Sheikhu Pura,Sheikhu Pura,31.71998761,73.98999508,361303,Pakistan,PK,PAK,Punjab
+Huancavelica,Huancavelica,-12.79003457,-74.99000696,42982,Peru,PE,PER,Huancavelica
+Angeles,Angeles,15.14505617,120.5450862,314493,Philippines,PH,PHL,Pampanga
+Kraków,Krakow,50.05997927,19.96001135,755525,Poland,PL,POL,Lesser Poland
+Suceava,Suceava,47.63769818,26.25931677,96865.5,Romania,RO,ROU,Suceava
+Severomorsk,Severomorsk,69.07305646,33.42306555,46709,Russia,RU,RUS,Murmansk
+Iskitim,Iskitim,54.65093935,83.28653357,60806.5,Russia,RU,RUS,Novosibirsk
+Kirov,Kirov,54.08518577,34.30482051,33852,Russia,RU,RUS,Kaluga
+Kondopoga,Kondopoga,62.20872093,34.28869747,31952,Russia,RU,RUS,Karelia
+Ugolnye Kopi,Ugolnyye Kopi,64.73329551,177.6999955,3367,Russia,RU,RUS,Chukchi Autonomous Okrug
+Yuzhno Sakhalinsk,Yuzhno Sakhalinsk,46.96497438,142.7400105,174685,Russia,RU,RUS,Sakhalin
+Cape Town,Cape Town,-33.92001097,18.43498816,2823929,South Africa,ZA,ZAF,Western Cape
+Nasir,Nasir,8.600391051,33.06660152,1741,South Sudan,SS,SSD,Upper Nile
+Vitoria,Vitoria,42.84998008,-2.669976849,199109.5,Spain,ES,ESP,País Vasco
+Dongola,Dongola,19.16659365,30.48329667,26404,Sudan,SD,SDN,Northern
+Lobamba,Lobamba,-26.46666746,31.19999711,7169.5,Swaziland,SZ,SWZ,Manzini
+Stockholm,Stockholm,59.35075995,18.09733473,1258654.5,Sweden,SE,SWE,Stockholm
+Al Qamishli,Al Qamishli,37.03002525,41.22997921,104107,Syria,SY,SYR,Hasaka (Al Haksa)
+Kulob,Kulob,37.92115948,69.77573035,96975,Tajikistan,TJ,TJK,Khatlon
+Ngara,Ngara,-2.469527569,30.65000484,10744,Tanzania,TZ,TZA,Kagera
+Sukhothai,Sukhothai,17.01186729,99.7515234,10276,Thailand,TH,THA,Sukhothai
+Banjul,Banjul,13.45387646,-16.59170149,38841.5,The Gambia,GM,GMB,Banjul
+Beja,Beja,36.73040529,9.190022744,58400,Tunisia,TN,TUN,Béja
+Grand Turk,Grand Turk,21.46642743,-71.13597864,4760.5,Turks and Caicos Islands,TC,TCA,
+Mbale,Mbale,1.090410175,34.1699967,247084,Uganda,UG,UGA,Bungokho
+Brovary,Brovary,50.49431968,30.78090124,77355.5,Ukraine,UA,UKR,Kiev
+Melitopol,Melitopol,46.83782452,35.37746822,135850,Ukraine,UA,UKR,Zaporizhzhya
+Abu Dhabi,Abu Dhabi,24.46668357,54.36659338,581861,United Arab Emirates,AE,ARE,Abu Dhabi
+Dubai,Dubai,25.22999615,55.27997432,1258173.5,United Arab Emirates,AE,ARE,Dubay
+Southend-on-Sea,Southend,51.55001752,0.71999711,395993,United Kingdom,GB,GBR,Southend-on-Sea
+Dundee,Dundee,56.47038902,-3.000008384,151013.5,United Kingdom,GB,GBR,Dundee
+Glendive,Glendive,47.10858319,-104.7104926,5277.5,United States of America,US,USA,Montana
+Mendocino,Mendocino,39.30776735,-123.7994308,548,United States of America,US,USA,California
+Las Vegas,Las Vegas,35.59701194,-105.2225027,15521,United States of America,US,USA,New Mexico
+Lander,Lander,42.83300437,-108.7325985,6742,United States of America,US,USA,Wyoming
+Hutchinson,Hutchinson,38.06549176,-97.92349085,42536.5,United States of America,US,USA,Kansas
+Independence,Independence,39.09111391,-94.41528121,130695,United States of America,US,USA,Missouri
+Arlington,Grand Prairie,32.68476076,-97.02023849,545107.5,United States of America,US,USA,Texas
+Florence,Florence,34.79969627,-87.67724288,40806.5,United States of America,US,USA,Alabama
+Palm Coast,Palm Coast,29.53800193,-81.22329574,45030,United States of America,US,USA,Florida
+Meridian,Meridian,32.36418601,-88.70361434,40863.5,United States of America,US,USA,Mississippi
+Rock Island,Rock Island,41.49339622,-90.53461369,102055.5,United States of America,US,USA,Illinois
+Johnson City,Johnson City,36.31332481,-82.35361434,68070.5,United States of America,US,USA,Tennessee
+Dover,Dover,39.15808657,-75.524703,54662.5,United States of America,US,USA,Delaware
+Lancaster,Lancaster,40.03777447,-76.30576644,209489,United States of America,US,USA,Pennsylvania
+Mekoryuk,Mekoryuk,60.38864671,-166.1899372,99,United States of America,US,USA,Alaska
+Grand Canyon,Grand Canyon,36.05478762,-112.1385922,1068.5,United States of America,US,USA,Arizona
+Davenport,Davenport,41.55398684,-90.58753036,178282.5,United States of America,US,USA,Iowa
+North Platte,North Platte,41.13628623,-100.7705005,24709.5,United States of America,US,USA,Nebraska
+Brookings,Brookings,44.30676455,-96.78803044,20313.5,United States of America,US,USA,South Dakota
+West Bend,West Bend,43.42570721,-88.18333602,31980.5,United States of America,US,USA,Wisconsin
+Jamestown,Jamestown,42.09736452,-79.23553593,37916.5,United States of America,US,USA,New York
+Bar Harbor,Bar Harbor,44.38789654,-68.20437464,4483.5,United States of America,US,USA,Maine
+Freeport,Freeport,28.95948427,-95.35687748,43762,United States of America,US,USA,Texas
+Palmer,Palmer,61.59971417,-149.1126919,9848,United States of America,US,USA,Alaska
+Wenatchee,Wenatchee,47.42362856,-120.3090237,45892,United States of America,US,USA,Washington
+Eugene,Eugene,44.05001019,-123.1000161,195183,United States of America,US,USA,Oregon
+Daytona Beach,Daytona Beach,29.21055422,-81.0230754,140775.5,United States of America,US,USA,Florida
+Minneapolis,Minneapolis,44.97997927,-93.25178634,1491886.5,United States of America,US,USA,Minnesota
+Honolulu,Honolulu,21.30687644,-157.8579979,578828.5,United States of America,US,USA,Hawaii
+Anchorage,Anchorage,61.21996991,-149.9002149,252068,United States of America,US,USA,Alaska
+San Francisco,San Francisco,37.74000775,-122.4599777,2091036,United States of America,US,USA,California
+"Washington, D.C.","Washington, D.C.",38.89954938,-77.00941858,2445216.5,United States of America,US,USA,District of Columbia
+New York,New York,40.74997906,-73.98001693,13524139,United States of America,US,USA,New York
+Melo,Melo,-32.35948606,-54.17998519,53258.5,Uruguay,UY,URY,Cerro Largo
+Khujayli,Khujayli,42.4047101,59.45165767,55200.5,Uzbekistan,UZ,UZB,Karakalpakstan
+Termiz,Termiz,37.23293276,67.27293738,159036,Uzbekistan,UZ,UZB,Surkhandarya
+Vatican City,Vatican City,41.90001223,12.44780839,832,Vatican (Holy Sea),VA,VAT,Lazio
+Guanare,Guanare,9.049976012,-69.75001673,131964,Venezuela,VE,VEN,Portuguesa
+Lao Chi,Lao Chi,22.50135134,103.9659948,51854,Vietnam,VN,VNM,Lào Cai
+Da Nang,Da Nang,16.06003908,108.2499711,943534.5,Vietnam,VN,VNM,Da Nang
+Bulawayo,Bulawayo,-20.16999754,28.58000199,697096,Zimbabwe,ZW,ZWE,Bulawayo
