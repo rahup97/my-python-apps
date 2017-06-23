@@ -11,14 +11,14 @@ h2 {
       color: #303030;
       font-weight: 400;
       margin-bottom: 30px;
-  }  
+  }
   .jumbotron {
       background-color: #f4511e;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
   }
-  
+
   .bg-grey {
       background-color: #f6f6f6;
   }
@@ -61,7 +61,7 @@ h2 {
       font-style: normal;
   }
   .panel {
-      border: 1px solid #f4511e; 
+      border: 1px solid #f4511e;
       border-radius:0 !important;
       transition: box-shadow 0.5s;
   }
@@ -98,9 +98,9 @@ h2 {
       background-color: #f4511e;
       color: #fff;
   }
- 
 
-  
+
+
 
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
@@ -131,7 +131,7 @@ h2 {
     0% {
       opacity: 0;
       transform: translateY(70%);
-    } 
+    }
     100% {
       opacity: 1;
       transform: translateY(0%);
@@ -141,7 +141,7 @@ h2 {
     0% {
       opacity: 0;
       -webkit-transform: translateY(70%);
-    } 
+    }
     100% {
       opacity: 1;
       -webkit-transform: translateY(0%);
@@ -162,12 +162,12 @@ h2 {
         font-size: 150px;
     }
   }
- 
+
 
 
 
 .background-image{
-    background-image: url("article.jpg");
+    background-image: url("/static/blur.jpg/");
     background-size: 100%;
     position: fixed;
     left: 0;
@@ -185,10 +185,10 @@ h2 {
 }
 
 .background-image1{
-    background-image: url("pengu.jpg");
+    background-image: url("/static/blur.jpg/");
     background-size: 100%;
     position: fixed;
-    left: 0; 
+    left: 0;
     right: 0;
     display: block;
     border: 3px solid black;
@@ -236,7 +236,7 @@ h2 {
     color:white;
     background-color: darkcyan;
     background-size:100%;
-    
+
 }
 
 
@@ -246,7 +246,7 @@ h2 {
 }
 .navbar-inverse{
     background-color: darkcyan;
-  
+
 }
 
 .nav.navbar-nav li a {
@@ -254,12 +254,12 @@ h2 {
 }
 
 
-.divider-10{ 
-width:100%; 
-min-height:1px; 
-margin-top:10px; 
-margin-bottom:10px;  
-display:inline-block; 
+.divider-10{
+width:100%;
+min-height:1px;
+margin-top:10px;
+margin-bottom:10px;
+display:inline-block;
 position:relative;
 }
 
@@ -297,9 +297,9 @@ position:relative;
     background-color: #00acc1;
 }
 
-.bg-4 { 
+.bg-4 {
       padding-top: 0px;
       padding-bottom: 2px;
-      background-color: darkcyan; 
+      background-color: darkcyan;
       color: #fff;
   }
