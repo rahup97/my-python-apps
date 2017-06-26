@@ -3,13 +3,13 @@ A program that stores the following information about user's current semester
 Course name, Internal I, II and III scores along with user's total scores for each course
 
 User can:
-View all marks
-Search for entry: The user can search for the course by entering the course name
+1)View all marks
+2)Search for entry: The user can search for the course by entering the course name
                   or the user can also search details of courses having a certain value of credits
-Add entry
-Delete entry
-Update entry
-Close
+3)Add entry
+4)Delete entry
+5)Update entry
+6)Close
 """
 
 from tkinter import *
