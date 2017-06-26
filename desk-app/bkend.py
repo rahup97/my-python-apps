@@ -44,4 +44,4 @@ def update(id, course, credits, int1, int2, int3, labss):
     conn.commit()
     conn.close()
 
-connect()  #must always run whenever program is opened
+connect()       #must always run whenever program is opened
