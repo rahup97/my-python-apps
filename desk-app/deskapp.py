@@ -6,9 +6,9 @@ User can:
 1)View all marks
 2)Search for entry: The user can search for the course by entering the course name
                   or the user can also search details of courses having a certain value of credits
-3)Add entry
-4)Delete entry
-5)Update entry
+3)Add an entry
+4)Delete the entry
+5)Update the entry
 6)Close
 """
 
