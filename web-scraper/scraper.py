@@ -2,14 +2,14 @@ import pandas
 import requests
 from bs4 import BeautifulSoup
 
-base_url = "http://www.pythonhow.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/t=0&s="
+base_url = "http://www.pythonhow.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/t=0&s="                #Enter your own reqd base url which is basically the first page
 listall = []
-rtemp = requests.get("http://www.pythonhow.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/")
+rtemp = requests.get("http://www.pythonhow.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/")           #To obtain number of pages so you can crawl through the web pages
 ctemp = rtemp.content
 souptemp = BeautifulSoup(ctemp, "html.parser")
 page_number = souptemp.find_all("a", {"class":"Page"})[-1].text
-for page in range(0, int(page_number)*10, 10):
-    req = requests.get(base_url + str(page) + ".html")
+for page in range(0, int(page_number)*10, 10):                                                  #figure out url pattern while changing pages
+    req = requests.get(base_url + str(page) + ".html")                                          #and do the needful modifications to the base url to get data
     c = req.content
     soup = BeautifulSoup(c, "html.parser")
     all = soup.find_all("div", {"class":"propertyRow"})
