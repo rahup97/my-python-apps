@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> HEIGHTIFY </title>
+    <head>
+      <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+      <style>
+      .mybutt {
+        width: 80px;
+        height:40px;
+        background-color: green;
+        border: 2;
+        border-color: green;
+        margin: 3px;
+        color: white;
+      }
+
+      .email-exists{
+        color: red;
+        font-weight: bold;
+      }
+
+      </style>
+      <body>
+        <div class="container">
+          <h1> Welcome to Heightify! </h1>
+          <h3> Please fill the entries to get population statistics on height </h3>
+          <div class="email-exists">
+          {{text | safe}}
+          </div>
+  		      <div class="form">
+              <form action = {{url_for('success')}} method="POST">
+  			        <input title = "Enter Email" placeholder="Enter your email address" type="email" name="email_name" required> <br>
+  			        <input title = "Enter your Password" placeholder="Enter your height in cm" type="number" min="50", max="300", step="0." name="height_name" required> <br><br>
+                <button class = "mybutt" type="submit"> Submit </button>
+  		        </form>
+          </div>
+  		  </div>
+      </body>
+  </html>
