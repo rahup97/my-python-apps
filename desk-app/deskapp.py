@@ -13,7 +13,7 @@ User can:
 """
 
 from tkinter import *
-import bkend                #py file containing all the necessary back end functions
+import db                #py file containing all the necessary back end functions
 
 def get_selected_course(event):
     global selected
@@ -21,46 +21,47 @@ def get_selected_course(event):
     selected = listbox.get(index)
     e1.delete(0, END)
     e1.insert(END, selected[1])
-    e2.delete(0, END)
-    e2.insert(END, selected[2])
     e3.delete(0, END)
     e3.insert(END, selected[3])
     e4.delete(0, END)
     e4.insert(END, selected[4])
-    e5.delete(0, END)
-    e5.insert(END, selected[5])
-    e6.delete(0, END)
-    e6.insert(END, selected[6])
 
+def clear_button():
+    e1.delete(0, END)
+    e3.delete(0, END)
+    e4.delete(0, END)
+    position_val.set("Null")
+    permit_val.set("Null")
+    dept_val.set("Null")
 
 #defining the functions that links backend function to front end gui for buttons
 
 def view_cmd():
     listbox.delete(0, END)
-    for row in bkend.view():
+    for row in db.view():
         listbox.insert(END, row)
 
 def search_cmd():
     listbox.delete(0, END)
-    for row in bkend.search(course_val.get(), credit_val.get()):
+    for row in db.search(permit_val.get(), name_val.get().lower()):
         listbox.insert(END, row)
 
 def add_cmd():
-    bkend.insert(course_val.get(), credit_val.get(),int1_val.get(), int2_val.get(), int3_val.get(), labself_val.get())
+    db.insert(name_val.get().lower(), position_val.get(), user_val.get(), pass_val.get(), dept_val.get(), permit_val.get())
     view_cmd()
 
 def del_cmd():
-    bkend.delete(selected[0])
+    db.delete(selected[0])
     view_cmd()
 
 def update_cmd():
-    bkend.update(selected[0], course_val.get(), credit_val.get(), int1_val.get(), int2_val.get(), int3_val.get(), labself_val.get())
+    db.update(selected[0], name_val.get(), position_val.get(), user_val.get(), pass_val.get(), dept_val.get(), permit_val.get())
     view_cmd()
 
 
 window = Tk()
 
-window.wm_title("My Marks")
+window.wm_title("Faculty Database for E-Portal App")
 
 for i in range(8):
     Grid.rowconfigure(window, i, weight=1)
@@ -71,50 +72,53 @@ for i in range(8):
                     #and also add sticky = N+S+E+W in the grid method
 
 #adding labels and entry forms to the UI
-l1 = Label(window, text = "Course name:")
+l1 = Label(window, text = "Faculty Name:")
 l1.grid(row = 0, column = 0, sticky = N+S+E+W)
 
-course_val = StringVar()
-e1 = Entry(window, textvariable = course_val)
+name_val = StringVar()
+e1 = Entry(window, textvariable = name_val)
 e1.grid(row = 0, column = 1, sticky = N+S+E+W)
 
-l2 = Label(window, text = "Credits:")
+l2 = Label(window, text = "Position:")
 l2.grid(row = 0, column = 3, sticky = N+S+E+W)
 
-credit_val = StringVar()
-e2 = Entry(window, textvariable = credit_val)
+choices = {"Null", "Assistant Professor", "Associate Professor"}
+position_val = StringVar()
+e2 = OptionMenu(window, position_val, *choices)
 e2.grid(row = 0, column = 4, sticky = N+S+E+W)
 
-l3 = Label(window, text = "Internal I:")
+l3 = Label(window, text = "User ID:")
 l3.grid(row = 1, column = 0, sticky = N+S+E+W)
 
-int1_val = StringVar()
-e3 = Entry(window, textvariable = int1_val)
+user_val = StringVar()
+e3 = Entry(window, textvariable = user_val)
 e3.grid(row = 1, column = 1, sticky = N+S+E+W)
 
-l4 = Label(window, text = "Internal II:")
+l4 = Label(window, text = "Password:")
 l4.grid(row = 1, column = 3, sticky = N+S+E+W)
 
-int2_val = StringVar()
-e4 = Entry(window, textvariable = int2_val)
+pass_val = StringVar()
+e4 = Entry(window, textvariable = pass_val)
 e4.grid(row = 1, column = 4, sticky = N+S+E+W)
 
-l5 = Label(window, text = "Internal III:")
+l5 = Label(window, text = "Department:")
 l5.grid(row = 2, column = 0, sticky = N+S+E+W)
 
-int3_val = StringVar()
-e5 = Entry(window, textvariable = int3_val)
+choices2 = {"Null", "CSE", "Other"}
+dept_val = StringVar()
+e5 = OptionMenu(window, dept_val, *choices2)
 e5.grid(row = 2, column = 1, sticky = N+S+E+W)
 
-l5 = Label(window, text = "Lab + SelfStudy:")
-l5.grid(row = 2, column = 3, sticky = N+S+E+W)
+l6 = Label(window, text = "Permission:")
+l6.grid(row = 2, column = 3, sticky = N+S+E+W)
 
-labself_val = StringVar()
-e6 = Entry(window, textvariable = labself_val)
+choices3 = {"Null", "YES", "NO"}
+permit_val = StringVar()
+e6 = OptionMenu(window, permit_val, *choices3)
 e6.grid(row = 2, column = 4, sticky = N+S+E+W)
 
 listbox = Listbox(window, height = 8, width = 35)
-listbox.grid(row = 3, column = 0, rowspan = 6, columnspan = 2, padx = (30,0), sticky = N+S+E+W)
+listbox.grid(row = 3, column = 0, rowspan = 7, columnspan = 2, padx = (30,0), sticky = N+S+E+W)
 
 scrollbar1 = Scrollbar(window)
 scrollbar1.grid(row = 3, column = 3, rowspan = 6)
@@ -129,24 +133,26 @@ scrollbar1.configure(command = listbox.yview)
 listbox.bind('<<ListboxSelect>>', get_selected_course)
 
 #now adding buttons to the UI
+clear = Button(window, text = "Reset", width = 12, command = clear_button)
+clear.grid(row = 3, column = 4, padx = (0, 10), sticky = N+S+E+W)
 
 view = Button(window, text = "View All", width = 12, command = view_cmd)
-view.grid(row = 3, column = 4, padx = (0, 10), sticky = N+S+E+W)
+view.grid(row = 4, column = 4, padx = (0, 10), sticky = N+S+E+W)
 
-search = Button(window, text = "Search for Course", width = 12, command = search_cmd)
-search.grid(row = 4, column = 4, padx = (0, 10), sticky = N+S+E+W)
+search = Button(window, text = "Search for Faculty", width = 12, command = search_cmd)
+search.grid(row = 5, column = 4, padx = (0, 10), sticky = N+S+E+W)
 
-add = Button(window, text = "Add Course", width = 12, command = add_cmd)
-add.grid(row = 5, column = 4, padx = (0, 10), sticky = N+S+E+W)
+add = Button(window, text = "Add Faculty", width = 12, command = add_cmd)
+add.grid(row = 6, column = 4, padx = (0, 10), sticky = N+S+E+W)
 
 delete = Button(window, text = "Delete Selected", width = 12, command = del_cmd)
-delete.grid(row = 7, column = 4, padx = (0, 10), sticky = N+S+E+W)
+delete.grid(row = 8, column = 4, padx = (0, 10), sticky = N+S+E+W)
 
 update = Button(window, text = "Update Selected", width = 12, command = update_cmd)
-update.grid(row = 6, column = 4, padx = (0, 10), sticky = N+S+E+W)
+update.grid(row = 7, column = 4, padx = (0, 10), sticky = N+S+E+W)
 
 exit = Button(window, text = "Exit", width = 12, command = window.destroy)
-exit.grid(row = 8, column = 4, padx = (0, 10), sticky = N+S+E+W)
+exit.grid(row = 9, column = 4, padx = (0, 10), sticky = N+S+E+W)
 
 view_cmd()
 

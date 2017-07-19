@@ -1,41 +1,47 @@
-import psycopg2 as psy
+import sqlite3 as sql
 
-def create_table():
-    conn = psy.connect("dbname = 'database1' user = 'postgres' password = 'post123' host = 'localhost' port = '5432'")
+def connect():
+    conn = sql.connect("faculty.db")
     cur = conn.cursor()
-    cur.execute("CREATE TABLE IF NOT EXISTS store (item TEXT, quantity INTEGER, price REAL)")
+    cur.execute("CREATE TABLE IF NOT EXISTS faculty (id INTEGER PRIMARY KEY, name TEXT, position TEXT, username TEXT, passw TEXT, permit TEXT, dept TEXT)")
     conn.commit()
     conn.close()
 
-def insert(item, quant, price):
-    conn = psy.connect("dbname = 'database1' user = 'postgres' password = 'post123' host = 'localhost' port = '5432'")
+def insert(name, position, username, passw, permit, dept):
+    conn = sql.connect("faculty.db")
     cur = conn.cursor()
-    cur.execute("INSERT INTO store VALUES (%s, %s, %s)", (item, quant, price))              #to prevent SQL injections
+    cur.execute("INSERT INTO faculty VALUES (NULL, ?, ?, ?, ?, ?, ?)", (name, position, username, passw, permit, dept))
     conn.commit()
     conn.close()
 
 def view():
-    conn = psy.connect("dbname = 'database1' user = 'postgres' password = 'post123' host = 'localhost' port = '5432'")
+    conn = sql.connect("faculty.db")
     cur = conn.cursor()
-    cur.execute("SELECT * from store")
+    cur.execute("SELECT * FROM faculty")
     data = cur.fetchall()
     conn.close()
     return data
 
-def delete(item):
-    conn = psy.connect("dbname = 'database1' user = 'postgres' password = 'post123' host = 'localhost' port = '5432'")
+def search(permit="NO", name="", position="", username="", passw="", dept=""):
+    conn = sql.connect("faculty.db")
     cur = conn.cursor()
-    cur.execute("DELETE FROM store where item = %s", (item,))
+    cur.execute("SELECT * FROM faculty WHERE permit = ? OR name = ?", (permit, name))
+    data = cur.fetchall()
+    conn.close()
+    return data
+
+def delete(id):
+    conn = sql.connect("faculty.db")
+    cur = conn.cursor()
+    cur.execute("DELETE FROM faculty WHERE id = ?", (id,))
     conn.commit()
     conn.close()
 
-def update(quant, price, item):
-    conn = psy.connect("dbname = 'database1' user = 'postgres' password = 'post123' host = 'localhost' port = '5432'")
+def update(id, name, position, username, passw, permit, dept):
+    conn = sql.connect("faculty.db")
     cur = conn.cursor()
-    cur.execute("UPDATE store SET quantity = %s, price = %s WHERE item = %s", (quant, price, item))
+    cur.execute("UPDATE faculty SET name = ?, position = ?, username = ?, passw = ?, permit = ?, dept = ? WHERE id = ?", (name, position, username, passw, permit, dept, id))
     conn.commit()
     conn.close()
 
-
-create_table()
-print(view())
+connect()       #must always run whenever program is opened
